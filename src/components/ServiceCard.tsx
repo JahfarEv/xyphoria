@@ -9,7 +9,7 @@ interface ServiceCardProps {
 }
 
 export default function ServiceCard({ service, index }: ServiceCardProps) {
-  const { icon: Icon, title, tagline, badge, active, image, slug } = service
+  const { icon: Icon, title, tagline,  active, image, slug } = service
 
   return (
     <motion.div
