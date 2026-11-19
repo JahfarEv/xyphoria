@@ -1,63 +1,60 @@
-import { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
-import { HiOutlineBolt, HiOutlineBars3, HiOutlineXMark } from 'react-icons/hi2'
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { HiOutlineBolt, HiOutlineBars3, HiOutlineXMark } from "react-icons/hi2";
 
 export default function Header() {
-  const [open, setOpen] = useState(false)
-  const { pathname, hash } = useLocation()
+  const [open, setOpen] = useState(false);
+  const { pathname, hash } = useLocation();
 
   const links = [
-    { href: '/', label: 'Home' },
-    { href: '/#about', label: 'About' },
-    { href: '/#services', label: 'Services' },
-    { href: '/#initiatives', label: 'Initiatives' },
-    { href: '/#movement', label: 'Join Us' },
-    { href: '/#contact', label: 'Contact' },
-  ]
+    { href: "/", label: "Home" },
+    { href: "/#about", label: "About" },
+    { href: "/#services", label: "Services" },
+    { href: "/#initiatives", label: "Initiatives" },
+    { href: "/#movement", label: "Join Us" },
+    { href: "/#contact", label: "Contact" },
+  ];
   const isActiveLink = (href: string) =>
-    href === '/' ? pathname === '/' && !hash : pathname === '/' && hash === href.slice(1)
+    href === "/"
+      ? pathname === "/" && !hash
+      : pathname === "/" && hash === href.slice(1);
 
   useEffect(() => {
-    setOpen(false)
-  }, [pathname, hash])
+    setOpen(false);
+  }, [pathname, hash]);
 
   useEffect(() => {
-    if (!open) return
+    if (!open) return;
 
     const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setOpen(false)
-    }
+      if (event.key === "Escape") setOpen(false);
+    };
 
-    window.addEventListener('keydown', closeOnEscape)
-    return () => window.removeEventListener('keydown', closeOnEscape)
-  }, [open])
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [open]);
 
   return (
     <motion.header
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
       className="bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm sticky top-0 z-50"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between gap-4">
-<Link to="/">
-  <motion.div
-    whileHover={{ scale: 1.03 }}
-    className="flex items-center gap-3 group"
-  >
-    <img
-      src="/images/X.png"
-      alt="Xybuz"
-      className="h-10 w-10 object-contain"
-    />
-   <span className="relative font-brand text-[32px] md:text-[36px] font-black tracking-[0.04em] uppercase leading-none">
-  <span className="text-brand-blue">XY</span>
-  <span className="text-brand-yellow">BUZ</span>
-  <span className="absolute left-0 -bottom-1 h-[3px] w-0 rounded-full bg-brand-yellow transition-all duration-300 group-hover:w-full" />
-</span>
-  </motion.div>
-</Link>
+        <Link to="/">
+          <motion.div
+            whileHover={{ scale: 1.03 }}
+            className="flex items-center gap-3 group"
+          >
+            <span className="relative font-brand text-[32px] md:text-[36px] font-bold tracking-[0.04em] uppercase leading-none ">
+              <span className="text-brand-mid">XY</span>
+              <span className="text-brand-green">BUZ</span>
+              <span className="absolute left-0 -bottom-1 h-[3px] w-0 rounded-full bg-brand-yellow transition-all duration-300 group-hover:w-full" />
+            </span>
+          </motion.div>
+        </Link>
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-1">
           {links.map((link) => (
@@ -66,8 +63,8 @@ export default function Header() {
               href={link.href}
               className={`px-3 xl:px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                 isActiveLink(link.href)
-                  ? 'bg-brand-light text-brand-green'
-                  : 'text-slate-600 hover:text-brand-green hover:bg-slate-50'
+                  ? "bg-brand-light text-brand-green"
+                  : "text-slate-600 hover:text-brand-green hover:bg-slate-50"
               }`}
             >
               {link.label}
@@ -102,7 +99,7 @@ export default function Header() {
           <motion.nav
             id="mobile-navigation"
             initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
+            animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
             className="lg:hidden overflow-hidden border-t border-slate-100 bg-white"
@@ -115,8 +112,8 @@ export default function Header() {
                   onClick={() => setOpen(false)}
                   className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
                     isActiveLink(link.href)
-                      ? 'bg-brand-light text-brand-green'
-                      : 'text-slate-700 hover:bg-slate-50'
+                      ? "bg-brand-light text-brand-green"
+                      : "text-slate-700 hover:bg-slate-50"
                   }`}
                 >
                   {link.label}
@@ -127,5 +124,5 @@ export default function Header() {
         )}
       </AnimatePresence>
     </motion.header>
-  )
+  );
 }
