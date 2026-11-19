@@ -1,9 +1,4 @@
 import { Link } from 'react-router-dom'
-import {
-  HiOutlineEnvelope,
-  HiOutlineMapPin,
-  HiOutlinePhone,
-} from 'react-icons/hi2'
 import { services } from '../data/services'
 
 export default function Footer() {
@@ -20,25 +15,7 @@ export default function Footer() {
               A multi-vertical company building across software, real estate,
               tourism, and agriculture. Modern, thoughtful, and built to last.
             </p>
-            <div className="space-y-2 text-sm">
-              <div className="flex items-center gap-2 text-slate-400">
-                <HiOutlineEnvelope className="text-brand-green" />
-                <a
-                  href="mailto:hello@zyphoriz.com"
-                  className="hover:text-white transition"
-                >
-                  hello@zyphoriz.com
-                </a>
-              </div>
-              <div className="flex items-center gap-2 text-slate-400">
-                <HiOutlinePhone className="text-brand-green" />
-                <span>+91 00000 00000</span>
-              </div>
-              <div className="flex items-center gap-2 text-slate-400">
-                <HiOutlineMapPin className="text-brand-green" />
-                <span>India</span>
-              </div>
-            </div>
+           
           </div>
 
           {/* Services */}
@@ -67,23 +44,18 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-slate-400 hover:text-brand-green transition">
+                <a href="/#about" className="text-slate-400 hover:text-brand-green transition">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="text-slate-400 hover:text-brand-green transition">
-                  Careers
+                <a href="/#movement" className="text-slate-400 hover:text-brand-green transition">
+                  Join Us
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-slate-400 hover:text-brand-green transition">
+                <a href="/#contact" className="text-slate-400 hover:text-brand-green transition">
                   Contact
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-slate-400 hover:text-brand-green transition">
-                  Privacy
                 </a>
               </li>
             </ul>
@@ -91,8 +63,8 @@ export default function Footer() {
         </div>
 
         <div className="pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-500">
-          <p>© 2025 Xyphoria. All rights reserved.</p>
-          <p>Built with care in India.</p>
+          <p>© 2026 Xyphoria. All rights reserved.</p>
+          <p>Built with Nexve Core.</p>
         </div>
       </div>
     </footer>

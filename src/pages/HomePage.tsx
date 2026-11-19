@@ -2,6 +2,9 @@ import { motion } from 'framer-motion'
 import HeroBanner from '../components/HeroBanner'
 import ServicesGrid from '../components/ServicesGrid'
 import CTASection from '../components/CTASection'
+import AboutSection from '../components/AboutSection'
+import InitiativesSection from '../components/InitiativesSection'
+import MovementSection from '../components/MovementSection'
 
 export default function HomePage() {
   return (
@@ -12,11 +15,10 @@ export default function HomePage() {
       transition={{ duration: 0.4 }}
     >
       <HeroBanner />
-      {/* <StatsSection /> */}
+      <AboutSection />
       <ServicesGrid />
-      {/* <WhyUs /> */}
-      {/* <ProcessSection /> */}
-      {/* <Testimonials /> */}
+      <InitiativesSection />
+      <MovementSection />
       <CTASection />
     </motion.div>
   )

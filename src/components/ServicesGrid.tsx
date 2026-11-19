@@ -14,10 +14,10 @@ export default function ServicesGrid() {
           className="text-center mb-14"
         >
           <span className="text-xs font-semibold uppercase tracking-wider text-brand-green">
-            What we do
+            Our services
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-brand-mid mt-2 mb-4">
-            Our Expertise
+            Our Services
           </h2>
           <motion.div
             initial={{ width: 0 }}
@@ -27,8 +27,8 @@ export default function ServicesGrid() {
             className="h-1 bg-brand-green rounded-full mx-auto opacity-70"
           />
           <p className="text-slate-500 mt-5 max-w-2xl mx-auto">
-            Four verticals, one promise — thoughtful execution. Click any
-            category to explore what we deliver.
+            Four connected verticals, shaped around trust, quality, and
+            sustainable progress.
           </p>
         </motion.div>
 

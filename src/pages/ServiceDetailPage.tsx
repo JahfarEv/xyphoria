@@ -95,7 +95,7 @@ export default function ServiceDetailPage() {
                 {service.detail.overview}
               </p>
               <a
-                href="#contact"
+                href="/#contact"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-brand-green text-white font-semibold rounded-full hover:bg-emerald-700 transition shadow-md shadow-brand-green/20"
               >
                 Discuss this service
@@ -182,7 +182,7 @@ export default function ServiceDetailPage() {
               </h2>
             </div>
             <Link
-              to="/"
+              to="/#services"
               className="text-sm font-semibold text-brand-green hover:underline"
             >
               View all →

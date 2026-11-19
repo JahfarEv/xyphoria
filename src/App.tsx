@@ -12,7 +12,13 @@ export default function App() {
     <div className="min-h-screen bg-soft flex flex-col">
       <ScrollToTop />
       <Header />
-      <main className="flex-1">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-white focus:px-4 focus:py-3 focus:text-brand-dark focus:shadow-lg"
+      >
+        Skip to main content
+      </a>
+      <main id="main-content" className="flex-1">
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<HomePage />} />

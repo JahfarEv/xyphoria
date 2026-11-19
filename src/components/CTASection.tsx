@@ -33,7 +33,7 @@ export default function CTASection() {
                 <HiArrowRight className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="#services"
+                href="/#services"
                 className="inline-flex items-center gap-2 px-8 py-3.5 bg-transparent text-white font-semibold rounded-full border border-white/40 hover:bg-white/10 transition"
               >
                 Browse services

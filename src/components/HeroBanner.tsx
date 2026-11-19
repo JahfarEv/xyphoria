@@ -50,8 +50,9 @@ export default function HeroBanner() {
             transition={{ delay: 0.45, duration: 0.6 }}
             className="text-lg md:text-xl text-white/80 max-w-2xl mb-10 leading-relaxed"
           >
-            Xyphoria delivers excellence across software, real estate, and soon —
-            tourism &amp; agriculture. Clean, modern, and built for growth.
+            We build transparent software, dependable property solutions,
+            meaningful travel, and sustainable agriculture through one
+            purpose-led ecosystem.
           </motion.p>
 
           <motion.div
@@ -61,14 +62,14 @@ export default function HeroBanner() {
             className="flex flex-wrap gap-4"
           >
             <Link
-              to="/services/software-development"
+              to="/#services"
               className="group inline-flex items-center gap-2 px-7 py-3.5 bg-brand-green text-white font-semibold rounded-full hover:bg-emerald-700 transition-all shadow-lg shadow-brand-green/20"
             >
               Explore Services
               <HiArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Link>
             <a
-              href="#contact"
+              href="/#contact"
               className="inline-flex items-center gap-2 px-7 py-3.5 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full border border-white/30 hover:bg-white/20 transition-all"
             >
               <HiOutlinePlayCircle className="text-xl" />

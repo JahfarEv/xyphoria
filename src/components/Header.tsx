@@ -1,19 +1,37 @@
-import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HiOutlineBolt, HiOutlineBars3, HiOutlineXMark } from 'react-icons/hi2'
-import { services } from '../data/services'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const { pathname, hash } = useLocation()
 
   const links = [
-    { to: '/', label: 'Home' },
-    ...services.map((s) => ({
-      to: `/services/${s.slug}`,
-      label: s.shortTitle,
-    })),
+    { href: '/', label: 'Home' },
+    { href: '/#about', label: 'About' },
+    { href: '/#services', label: 'Services' },
+    { href: '/#initiatives', label: 'Initiatives' },
+    { href: '/#movement', label: 'Join Us' },
+    { href: '/#contact', label: 'Contact' },
   ]
+  const isActiveLink = (href: string) =>
+    href === '/' ? pathname === '/' && !hash : pathname === '/' && hash === href.slice(1)
+
+  useEffect(() => {
+    setOpen(false)
+  }, [pathname, hash])
+
+  useEffect(() => {
+    if (!open) return
+
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setOpen(false)
+    }
+
+    window.addEventListener('keydown', closeOnEscape)
+    return () => window.removeEventListener('keydown', closeOnEscape)
+  }, [open])
 
   return (
     <motion.header
@@ -35,20 +53,17 @@ export default function Header() {
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-1">
           {links.map((link) => (
-            <NavLink
-              key={link.to}
-              to={link.to}
-              end={link.to === '/'}
-              className={({ isActive }) =>
-                `px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                  isActive
-                    ? 'bg-brand-light text-brand-green'
-                    : 'text-slate-600 hover:text-brand-green hover:bg-slate-50'
-                }`
-              }
+            <a
+              key={link.href}
+              href={link.href}
+              className={`px-3 xl:px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                isActiveLink(link.href)
+                  ? 'bg-brand-light text-brand-green'
+                  : 'text-slate-600 hover:text-brand-green hover:bg-slate-50'
+              }`}
             >
               {link.label}
-            </NavLink>
+            </a>
           ))}
         </nav>
 
@@ -62,6 +77,8 @@ export default function Header() {
           onClick={() => setOpen((v) => !v)}
           className="lg:hidden p-2 rounded-full hover:bg-slate-100 transition"
           aria-label="Toggle menu"
+          aria-expanded={open}
+          aria-controls="mobile-navigation"
         >
           {open ? (
             <HiOutlineXMark className="text-2xl text-brand-mid" />
@@ -75,6 +92,7 @@ export default function Header() {
       <AnimatePresence>
         {open && (
           <motion.nav
+            id="mobile-navigation"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
@@ -83,21 +101,18 @@ export default function Header() {
           >
             <div className="px-6 py-4 flex flex-col gap-1">
               {links.map((link) => (
-                <NavLink
-                  key={link.to}
-                  to={link.to}
-                  end={link.to === '/'}
+                <a
+                  key={link.href}
+                  href={link.href}
                   onClick={() => setOpen(false)}
-                  className={({ isActive }) =>
-                    `px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
-                      isActive
-                        ? 'bg-brand-light text-brand-green'
-                        : 'text-slate-700 hover:bg-slate-50'
-                    }`
-                  }
+                  className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
+                    isActiveLink(link.href)
+                      ? 'bg-brand-light text-brand-green'
+                      : 'text-slate-700 hover:bg-slate-50'
+                  }`}
                 >
                   {link.label}
-                </NavLink>
+                </a>
               ))}
             </div>
           </motion.nav>
