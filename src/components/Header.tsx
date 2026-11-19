@@ -44,9 +44,16 @@ export default function Header() {
         <Link to="/">
           <motion.div
             whileHover={{ scale: 1.03 }}
-            className="text-2xl md:text-3xl font-bold tracking-tight text-brand-mid"
+            className="flex items-center gap-2.5"
           >
-            Xyphoria
+            <img
+              src="/images/X.png"
+              alt="Xyphoria"
+              className="h-11 w-11 md:h-12 md:w-12 object-contain"
+            />
+            <span className="text-xl md:text-2xl font-bold tracking-tight text-brand-mid">
+              Xyphoria
+            </span>
           </motion.div>
         </Link>
 
