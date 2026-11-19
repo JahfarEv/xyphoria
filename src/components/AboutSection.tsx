@@ -92,7 +92,7 @@ export default function AboutSection() {
             <div>
               <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-brand-green">
                 <span className="w-7 h-[2px] bg-brand-green" />
-                About Xyphoria
+                About XYBUZ
               </span>
 
               <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-bold text-brand-mid mt-5 leading-[1.15] tracking-tight">
@@ -108,7 +108,7 @@ export default function AboutSection() {
                 Who We Are
               </h3>
               <p className="text-slate-600 text-[15px] leading-7 mb-4">
-                Xyphoria is a purpose-led, multi-vertical company bringing
+                XYBUZ is a purpose-led, multi-vertical company bringing
                 technology, property, travel, and agriculture together around
                 a shared standard: useful ideas, thoughtful execution, and
                 lasting value.

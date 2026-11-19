@@ -41,7 +41,7 @@ export default function WhyUs() {
             transition={{ duration: 0.6 }}
           >
             <span className="text-xs font-semibold uppercase tracking-wider text-brand-green">
-              Why Xyphoria
+              Why XYBUZ
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-brand-mid mt-3 mb-5 leading-tight">
               A partner who thinks beyond the brief.

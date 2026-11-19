@@ -41,22 +41,23 @@ export default function Header() {
       className="bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm sticky top-0 z-50"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between gap-4">
-        <Link to="/">
-          <motion.div
-            whileHover={{ scale: 1.03 }}
-            className="flex items-center gap-2.5"
-          >
-            <img
-              src="/images/X.png"
-              alt="Xyphoria"
-              className="h-11 w-11 md:h-12 md:w-12 object-contain"
-            />
-            <span className="text-xl md:text-2xl font-bold tracking-tight text-brand-mid">
-              Xyphoria
-            </span>
-          </motion.div>
-        </Link>
-
+<Link to="/">
+  <motion.div
+    whileHover={{ scale: 1.03 }}
+    className="flex items-center gap-3 group"
+  >
+    <img
+      src="/images/X.png"
+      alt="Xybuz"
+      className="h-10 w-10 object-contain"
+    />
+   <span className="relative font-brand text-[32px] md:text-[36px] font-black tracking-[0.04em] uppercase leading-none">
+  <span className="text-brand-blue">XY</span>
+  <span className="text-brand-yellow">BUZ</span>
+  <span className="absolute left-0 -bottom-1 h-[3px] w-0 rounded-full bg-brand-yellow transition-all duration-300 group-hover:w-full" />
+</span>
+  </motion.div>
+</Link>
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-1">
           {links.map((link) => (

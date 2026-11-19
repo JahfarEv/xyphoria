@@ -109,7 +109,7 @@ export const services: Service[] = [
     accentColor: 'from-sky-500 to-cyan-400',
     detail: {
       overview:
-        'Xyphoria Tourism will curate journeys that blend comfort, culture, and conservation. Expect boutique itineraries, eco-lodges, and experiences crafted with local partners.',
+        'XYBUZ Tourism will curate journeys that blend comfort, culture, and conservation. Expect boutique itineraries, eco-lodges, and experiences crafted with local partners.',
       features: [
         {
           title: 'Personalised itinerary planning',

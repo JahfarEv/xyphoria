@@ -38,7 +38,7 @@ export default function Services() {
         className="text-center mt-16 text-slate-500 text-sm md:text-base border-t border-slate-100 pt-10 max-w-3xl mx-auto"
       >
         <span className="text-brand-green mr-1.5">●</span>
-        Two active pillars today, two more on the way. Xyphoria is expanding.
+        Two active pillars today, two more on the way. XYBUZ is expanding.
       </motion.p>
     </section>
   )

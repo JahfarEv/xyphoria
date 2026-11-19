@@ -43,7 +43,7 @@ export default function Hero() {
           variants={item}
           className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto"
         >
-          Xyphoria delivers excellence across software, real estate, and soon —
+          XYBUZ delivers excellence across software, real estate, and soon —
           tourism &amp; agriculture. Clean, modern, and built for growth.
         </motion.p>
       </motion.div>

@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="text-2xl font-bold text-white mb-4">
-              Xyphoria<span className="text-brand-green">.</span>
+              XYBUZ<span className="text-brand-green">.</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm mb-6">
               A multi-vertical company building across software, real estate,
@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-500">
-          <p>© 2026 Xyphoria. All rights reserved.</p>
+          <p>© 2026 XYBUZ. All rights reserved.</p>
           <p>Built with Nexve Core.</p>
         </div>
       </div>

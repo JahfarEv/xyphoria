@@ -19,7 +19,7 @@ export const stats: Stat[] = [
 export const testimonials: Testimonial[] = [
   {
     quote:
-      'Xyphoria rebuilt our legacy platform into a modern, scalable system. Delivery was on time and the team felt like an extension of ours.',
+      'XYBUZ rebuilt our legacy platform into a modern, scalable system. Delivery was on time and the team felt like an extension of ours.',
     name: 'Aarav Mehta',
     role: 'CTO',
     company: 'NorthPeak Logistics',
@@ -37,7 +37,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      'The clarity and craftsmanship Xyphoria brings is rare. They ask the right questions before writing a single line of code.',
+      'The clarity and craftsmanship XYBUZ brings is rare. They ask the right questions before writing a single line of code.',
     name: 'Daniel Okafor',
     role: 'Founder',
     company: 'Kite Financial',
