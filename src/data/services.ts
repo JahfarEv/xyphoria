@@ -23,18 +23,30 @@ export const services: Service[] = [
       overview:
         'From concept to deployment, we craft software that powers modern businesses. Our engineering teams specialise in full-stack web applications, mobile experiences, cloud-native architecture, and enterprise integrations.',
       features: [
-        'Custom web & mobile application development',
-        'Cloud infrastructure & DevOps (AWS, GCP, Azure)',
-        'API design, microservices & system integration',
-        'AI/ML feature integration and data pipelines',
-        'Legacy modernisation & migration',
-        'Ongoing maintenance, monitoring & support',
-      ],
-      deliverables: [
-        'Product discovery & technical specification',
-        'UI/UX design system and clickable prototype',
-        'Production-ready codebase with CI/CD',
-        'Documentation & handover training',
+        {
+          title: 'Custom web & mobile application development',
+          image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Cloud infrastructure & DevOps (AWS, GCP, Azure)',
+          image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'API design, microservices & system integration',
+          image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'AI/ML feature integration and data pipelines',
+          image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Legacy modernisation & migration',
+          image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Ongoing maintenance, monitoring & support',
+          image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80',
+        },
       ],
     },
   },
@@ -55,18 +67,30 @@ export const services: Service[] = [
       overview:
         'We help individuals, families, and businesses make confident property decisions. From first-time buyers to portfolio investors, our advisory combines market data with on-ground expertise.',
       features: [
-        'Residential & commercial property advisory',
-        'Investment portfolio structuring',
-        'Property valuation & market research',
-        'Legal, documentation & due diligence support',
-        'Rental management & tenant sourcing',
-        'Smart-home & sustainable building consulting',
-      ],
-      deliverables: [
-        'Personalised property investment plan',
-        'Curated shortlist matching your criteria',
-        'Site visits with a dedicated advisor',
-        'End-to-end transaction support',
+        {
+          title: 'Residential & commercial property advisory',
+          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Investment portfolio structuring',
+          image: 'https://images.unsplash.com/photo-1460472178825-e5240623afd5?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Property valuation & market research',
+          image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Legal, documentation & due diligence support',
+          image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Rental management & tenant sourcing',
+          image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Smart-home & sustainable building consulting',
+          image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80',
+        },
       ],
     },
   },
@@ -87,18 +111,30 @@ export const services: Service[] = [
       overview:
         'Xyphoria Tourism will curate journeys that blend comfort, culture, and conservation. Expect boutique itineraries, eco-lodges, and experiences crafted with local partners.',
       features: [
-        'Personalised itinerary planning',
-        'Eco-tourism & sustainable travel packages',
-        'Boutique hospitality partnerships',
-        'Cultural & culinary immersion experiences',
-        'Corporate retreats & group travel',
-        'Adventure & wellness retreats',
-      ],
-      deliverables: [
-        'Full itinerary with day-by-day plan',
-        'Curated stays & local guides',
-        'Transparent pricing, no hidden fees',
-        '24/7 on-trip support',
+        {
+          title: 'Personalised itinerary planning',
+          image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Eco-tourism & sustainable travel packages',
+          image: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Boutique hospitality partnerships',
+          image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Cultural & culinary immersion experiences',
+          image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Corporate retreats & group travel',
+          image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Adventure & wellness retreats',
+          image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80',
+        },
       ],
     },
   },
@@ -119,18 +155,30 @@ export const services: Service[] = [
       overview:
         'Our Agriculture vertical will empower growers with technology, sustainability, and market access. We are building partnerships with farmers, agri-tech startups, and cooperatives.',
       features: [
-        'Agri-tech advisory & IoT sensor deployment',
-        'Sustainable & regenerative farming practices',
-        'Smart supply chain & cold-chain logistics',
-        'Farm-to-market direct sourcing',
-        'Soil health & crop yield analytics',
-        'Farmer training & cooperative enablement',
-      ],
-      deliverables: [
-        'Farm assessment & technology roadmap',
-        'Pilot deployment with measurable KPIs',
-        'Supply chain integration blueprint',
-        'Ongoing agronomy & data support',
+        {
+          title: 'Agri-tech advisory & IoT sensor deployment',
+          image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Sustainable & regenerative farming practices',
+          image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Smart supply chain & cold-chain logistics',
+          image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Farm-to-market direct sourcing',
+          image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Soil health & crop yield analytics',
+          image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80',
+        },
+        {
+          title: 'Farmer training & cooperative enablement',
+          image: 'https://images.unsplash.com/photo-1592982537447-6f2a6a0e3cfd?auto=format&fit=crop&w=800&q=80',
+        },
       ],
     },
   },

@@ -2,8 +2,10 @@ import type { IconType } from 'react-icons'
 
 export interface ServiceDetail {
   overview: string
-  features: string[]
-  deliverables: string[]
+  features: {
+    title: string
+    image: string
+  }[]
 }
 
 export interface Service {

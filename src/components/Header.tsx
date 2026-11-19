@@ -28,7 +28,7 @@ export default function Header() {
             whileHover={{ scale: 1.03 }}
             className="text-2xl md:text-3xl font-bold tracking-tight text-brand-mid"
           >
-            Xyphoria<span className="text-brand-green">.</span>
+            Xyphoria
           </motion.div>
         </Link>
 
